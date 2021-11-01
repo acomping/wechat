@@ -1,0 +1,26 @@
+.dw-icon{
+    margin-top:15rpx;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+.left-v {
+    width: 180rpx;
+    background: #ccc;
+    padding: 20rpx 0;
+}
+.left-v view{
+    width: 180rpx;
+    line-height: 80rpx;
+    text-align: center;
+}
+
+.right-v {
+    flex: 1;
+    background: yellow;
+}
+.item-active{
+    background: #fff;
+}

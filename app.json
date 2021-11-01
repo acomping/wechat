@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/fenglei/fenglei",
+    "pages/list/list",
+    "pages/my/my"
+  ],
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#0275FE",
+    "list": [
+      {
+        "iconPath": "images/home-icon.png",
+        "selectedIconPath": "images/home-icon-active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/fenglei-icon.png",
+        "selectedIconPath": "images/fenglei-icon-active.png",
+        "pagePath": "pages/fenglei/fenglei",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/list-icon.png",
+        "selectedIconPath": "images/list-icon-active.png",
+        "pagePath": "pages/list/list",
+        "text": "商品列表"
+      },
+      {
+        "iconPath": "images/my-icon.png",
+        "selectedIconPath": "images/my-icon-active.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "用户管理",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

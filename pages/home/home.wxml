@@ -1,0 +1,20 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+    circular="true">
+    <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+            <view class="swiper-item">
+                <image class="img-style" mode="widthFix" src="{{item}}" lazy-load="true"></image>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="main">
+    <view class="list {{i==index?'textC':''}}" data-ia="{{index}}" wx:for="{{list}}" wx:key="*this" bindtap="change1">
+        {{item}}
+        <button class="btn-style" data-souyin="{{index}}" bindtap="deleteList">删除</button>
+        <button class="btn-style" data-addText="我的滑板车{{index}}" bindtap="addList">添加</button>
+    </view>
+</view>
+<!-- rpx 自适应的放大或者缩小 iphone6为基准 750px设计稿大小 如果是用px 是固定大小 大的设备显得小 小的设备显得大  -->
+<button bindtap="goback">返回之前的页面</button>
+

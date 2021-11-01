@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<swiper 
+    indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+    circular="true"
+    indicator-color="#FFF2BE"
+>
+    <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+            <view class="swiper-item">
+                <image class="img-sty" mode="widthFix" src="{{item}}" lazy-load="true"></image>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+
+<van-button plain type="primary" bindtap="goto">go home</van-button>
+
+<view wx:if="{{condition}}"> True </view>
+<view wx:if="{{length > 5}}"> 1 </view>
+<view wx:elif="{{length > 2}}"> 2 </view>
+<view wx:else> 3 </view>
+
+<block wx:if="{{condition}}">
+    <view>
+        view1
+    </view>
+    <view>
+        view2
+    </view>
+</block>
+<hello msg="{{msg}}" bindmyevent="changeMsg"></hello>
+<!-- <button open-type="getUserPrifile" bindgetuserinfo="fn">
+    点我
+</button> -->
+<!-- <image src="https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132">
+    
+</image> -->

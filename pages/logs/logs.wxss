@@ -1,0 +1,13 @@
+.menu{
+  display:flex;
+}
+.menu .menu-item{
+  flex:1;
+  text-align:center;
+  line-height:55rpx;
+  border:1rpx solid #ccc;
+}
+.itemSty{
+  color:#fff;
+  background:#FFD400;
+}

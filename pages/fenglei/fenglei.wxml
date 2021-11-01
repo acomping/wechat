@@ -1,0 +1,46 @@
+<!-- <van-search
+  value="{{ value }}"
+  label="地址"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onClick">
+    <van-icon name="location-o" size="50rpx" class="dw-icon"/>
+  </view>
+</van-search> -->
+<view class="main">
+  <scroll-view scroll-y="true" class="left-v">
+    <view wx:for="{{listL}}" wx:key="index" data-ind="{{index}}" bindtap="changeItem" class="{{index==activeItem:'item-active':''}}">电视</view>
+    <view>手机</view>
+    <view>电脑</view>
+    <view>家电</view>
+    <view>电视</view>
+    <view>手机</view>
+    <view>电脑</view>
+    <view>家电</view>
+    <view>电视</view>
+    <view>手机</view>
+    <view>电脑</view>
+    <view>家电</view>
+    <view>电视</view>
+    <view>手机</view>
+    <view>电脑</view>
+    <view>家电</view>
+    <view>电视</view>
+    <view>手机</view>
+    <view>电脑</view>
+    <view>家电</view>
+    <view>电视</view>
+    <view>手机</view>
+    <view>电脑</view>
+    <view>家电</view>
+  </scroll-view>
+  <scroll-view scroll-y="true" class="right-v">
+    <view>苹果x</view>
+    <view>苹果11</view>
+    <view>苹果12</view>
+    <view>苹果13</view>
+  </scroll-view>
+</view>

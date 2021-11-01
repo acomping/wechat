@@ -1,0 +1,21 @@
+/* pages/home/home.wxss */
+.img-style{
+    width:100%;
+}
+.list{
+    display:flex;
+    margin:10rpx;
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.btn-style{
+    width:160rpx!important;
+    height:60rpx;
+    line-height:60rpx;
+    font-size:14px;
+    padding:0;
+}
+.textC{
+    color:red;
+}

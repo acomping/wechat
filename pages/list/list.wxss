@@ -1,0 +1,7 @@
+.list-item{
+    padding:30rpx;
+    border-bottom:1px dotted #eee;
+}
+.list-item:last-child{
+    border:0;
+}

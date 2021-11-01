@@ -1,0 +1,5 @@
+/**index.wxss**/
+.img-sty{
+    display:block;
+    height:340rpx!important;
+}

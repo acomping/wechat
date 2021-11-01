@@ -1,0 +1,15 @@
+function getStr(fuhao,money){
+    return fuhao + money;
+}
+
+function getNum(num){
+    return num<10?'0'+num:'num';
+}
+
+module.exports = { 
+    getStr:getStr
+    getNum:getNum
+    hello:'你们好我是助教，我来自kw42，我叫陈小龙'
+}; 
+module.exports.msg = '我快毕业了，有点舍不得'
+    

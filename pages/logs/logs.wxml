@@ -1,0 +1,14 @@
+<view class="menu" >
+  <view 
+    class="menu-item {{i==index?'itemSty':''}}" 
+    data-souyin="{{index}}"
+    wx:for="{{list}}" 
+    wx:key="*this"
+    bindtap="changeItem"
+  >
+    {{item}}
+  </view>
+</view>
+<button bindtap="goHome">跳转到home页</button>
+<button bindtap="goIndex" style="margin-top:10rpx;">跳转到主页</button>
+  
