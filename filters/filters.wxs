@@ -7,9 +7,9 @@ function getNum(num){
 }
 
 module.exports = { 
-    getStr:getStr
-    getNum:getNum
-    hello:'你们好我是助教，我来自kw42，我叫陈小龙'
+    getStr:getStr,
+    getNum:getNum,
+    hello:'我的详细页面'
 }; 
-module.exports.msg = '我快毕业了，有点舍不得'
+module.exports.msg = '微信小程序'
     

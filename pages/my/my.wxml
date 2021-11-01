@@ -1,2 +1,22 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<wxs module="filter" src="../../filters/filters.wxs"></wxs>
+<block wx:if="{{flag}}">
+    <button class="btn" bindtap="getUser">获取用户信息</button>
+</block>
+<block wx:else>
+    <view class="nichen">微信昵称：{{userInfo.nickName}}</view>
+    <image class="head-sty" src="{{userInfo.avatarUrl}}"></image>
+</block>
+<van-button class="btnsq" type="primary" bindtap="getShouq" size="mini">获取授权</van-button>
+<van-button class="btnsq" type="primary" bindtap="setShouq" size="mini">获取授权</van-button>
+<view class="qianbao">
+    我的钱包：{{filter.getStr('$','10,000,000')}}
+    <view>今天是{{filter.getNum(1)}}号</view>
+    <view>{{filter.msg}}</view>
+    <view>{{filter.hello}}</view>
+</view>
+<view>
+    用户上传图片
+    <van-uploader file-list="{{fileList}}" bind:after-read="afterRead" style="margin-left:50rpx" deletable="{{true}}" 
+    bind:delete="delItem"
+    />
+</view>

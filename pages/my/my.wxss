@@ -1,1 +1,44 @@
-/* pages/my/my.wxss */
+.header{
+    width:100%;
+    line-height:85rpx;
+    background:#0283FD;
+    color:#fff;
+    text-align:center;
+}
+.row {
+    display:flex;
+    padding:25rpx;
+    border-bottom:1rpx solid #ccc;
+}
+.btn{
+    margin:40rpx;
+    border:1rpx solid #0283FD!important;
+    color:#0283FD!important;
+}
+.nichen{
+    text-align:center;
+}
+.head-sty{
+    display:block;
+    width:300rpx;
+    height:300rpx;
+    border-radius:50%;
+    margin:20rpx auto;
+}
+.div1{
+    display:flex
+}
+.qianbao{
+    text-align:center;
+    margin:20rpx;
+}
+.height-sty{
+    width:100%;
+    height:1000rpx;
+    background:#FFD000;
+}
+.van-button--primary {
+    display:block!important;
+    margin:10rpx auto;
+    width:200rpx;
+}

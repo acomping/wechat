@@ -1,5 +1,5 @@
 <!--pages/login/login.wxml-->
-<wxs module="filter" src="../../filters/filters.wxs"></wxs>
+
 <view class="header">
     用户登录页面
 </view>
@@ -12,25 +12,7 @@
 <button class="btn" type="primary" plain="true" bindtap="login">登录</button>
 
 
-<block wx:if="{{flag}}">
-    <button class="btn" bindtap="getUser">获取用户信息</button>
-</block>
-<block wx:else>
-    <view class="nichen">微信昵称：{{userInfo.nickName}}</view>
-    <image class="head-sty"src="{{userInfo.avatarUrl}}" ></image>
-</block>
-<view class="qianbao">
-    我的钱包：{{filter.getStr('$','10,000,000')}}
-    <view>
-        今天是{{filter.getNum(1)}}号
-    </view>
-    <view>
-        {{filter.msg}}
-    </view>
-    <view>
-        {{filter.hello}}
-    </view>
-</view>
+
 
 <!-- <view hidden="true">
     123

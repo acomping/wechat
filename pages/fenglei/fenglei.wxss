@@ -3,24 +3,32 @@
 }
 
 .main{
-    display: flex;
-    height: 100vh;
+    display:flex;
+    height:100vh;
 }
 .left-v {
-    width: 180rpx;
-    background: #ccc;
-    padding: 20rpx 0;
+    width:220rpx;
+    background:#ccc;
 }
 .left-v view{
-    width: 180rpx;
-    line-height: 80rpx;
-    text-align: center;
+    width:220rpx;
+    line-height:80rpx;
+    text-align:center;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.left-v view:first-child{
+    padding:10rpx 0;
+}
+.left-v view:last-child{
+    padding:10rpx 0;
+}
+.right-v{
+    flex:1;
+    background:yellow;
 }
 
-.right-v {
-    flex: 1;
-    background: yellow;
-}
 .item-active{
-    background: #fff;
+    background:#fff;
 }

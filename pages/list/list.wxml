@@ -8,6 +8,7 @@
 >
   <view slot="action" bind:tap="onClick">搜索</view>
 </van-search>
+<van-toast id="van-toast" />
 <block wx:if="{{flag}}">
   <view class="list-item" wx:for="{{list}}" wx:key="index" >
     {{item.goods_name}}

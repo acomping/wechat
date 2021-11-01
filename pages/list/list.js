@@ -1,4 +1,5 @@
 import { $request,$toast } from '../../utils/util'
+
 Page({
   data: {
     value: '',
@@ -34,10 +35,7 @@ Page({
       url:'goods',
       data:{
         pagenum:this.data.pagenum,
-        pagesize:6
-      },
-      header:{
-        'Authorization':wx.getStorageSync('token')
+        pagesize:10
       }
     });
     this.setData({
@@ -48,12 +46,14 @@ Page({
   },
   async queryShop(){
     let {data} = await $request({
-      url:`goods/${this.data.value.trim()}`,
-      header:{
-        'Authorization':wx.getStorageSync('token')
-      }
+      url:`goods/${this.data.value.trim()}`
     });
     console.log(data);
+    if(data.meta.status!=200){
+     /*  Toast.fail(data.meta.msg); */
+      $toast(data.meta.msg,'none',3000)
+      return; 
+    }
     this.setData({
       goods_name:data.data.goods_name,
       flag:false
